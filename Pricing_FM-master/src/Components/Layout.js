@@ -2,9 +2,11 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
+
 function Layout(props) {
     return(
         <>
+
         <Header 
               companyName="ADLTP"
               navBar={[
@@ -28,6 +30,7 @@ function Layout(props) {
               />
               {props.children}
         <Footer />
+
         </>
     )
 }

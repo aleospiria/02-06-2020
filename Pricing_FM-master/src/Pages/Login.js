@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Components/ejemplo.css";
+import logo from "../images/Logo.jpg"
 
 function Login() {
   return (
@@ -8,10 +9,10 @@ function Login() {
         <Link to="/">
       <img
         class="mb-4"
-        src="../images/Logo.jpg"
+        src={logo}
         alt=""
-        width="72"
-        height="72"
+        width= "72px"
+        height="72px"
       />
       </Link>
       <h1 class="h3 mb-3 font-weight-normal">Por favor, ingrese sus datos</h1>
@@ -50,8 +51,8 @@ function Login() {
       <br></br>
       <p> Ingresar por: </p>
       <div class="btn-group d-flex">
-      <button class="btn btn-primary btn-block" type="submit">Facebook</button>
-      <button class="btn btn-lg btn-warning btn-block" type="submit">Google</button>
+      <button id="Face" class="btn btn-primary btn-block" type="submit">Facebook</button>
+      <button id= "Goog" class="btn btn-warning btn-block" type="submit">Google</button>
       </div>
       <p class="mt-5 mb-3 text-muted">©2020</p>
     </form>

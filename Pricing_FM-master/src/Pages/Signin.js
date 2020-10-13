@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/Logo.jpg";
 
 function Signin() {
     return (
@@ -7,7 +8,7 @@ function Signin() {
           <Link to="/">
         <img
           class="mb-4"
-          src="../images/Logo.jpg"
+          src={logo}
           alt=""
           width="72"
           height="72"
@@ -62,8 +63,8 @@ function Signin() {
         </button>
         <p> Registrarse con: </p>
       <div class="btn-group d-flex">
-      <button class="btn btn-primary btn-block" type="submit">Facebook</button>
-      <button class="btn btn-lg btn-warning btn-block" type="submit">Google</button>
+      <button id="Face" class="btn btn-primary btn-block" type="submit">Facebook</button>
+      <button id="Goog" class="btn btn-warning btn-block" type="submit">Google</button>
       </div>
         <p class="mt-5 mb-3 text-muted">©2020</p>
       </form>

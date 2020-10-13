@@ -18,7 +18,7 @@ function Header(props) {
 
       </nav>
       <Link className="btn btn-outline-primary" to="/Login">
-        Sign up
+        Iniciar Sesion
       </Link>
     </div>
   );
