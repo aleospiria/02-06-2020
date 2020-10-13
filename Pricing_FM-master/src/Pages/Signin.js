@@ -5,7 +5,6 @@ import logo from "../images/Logo.jpg";
 function Signin() {
     return (
       <form class="form-signin">
-          <Link to="/">
         <img
           class="mb-4"
           src={logo}
@@ -13,7 +12,6 @@ function Signin() {
           width="72"
           height="72"
         />
-        </Link>
         <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
         <label for="inputEmail" class="sr-only">
           Email address

@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../images/Logo.jpg"
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
           <div class="col-12 col-md">
             <img
               class="mb-2"
-              src="/docs/4.5/assets/brand/bootstrap-solid.svg"
+              src= {Logo}
               alt=""
               width="24"
               height="24"

@@ -6,7 +6,6 @@ import logo from "../images/Logo.jpg"
 function Login() {
   return (
     <form class="form-signin">
-        <Link to="/">
       <img
         class="mb-4"
         src={logo}
@@ -14,7 +13,6 @@ function Login() {
         width= "72px"
         height="72px"
       />
-      </Link>
       <h1 class="h3 mb-3 font-weight-normal">Por favor, ingrese sus datos</h1>
       <label for="inputEmail" class="sr-only">
         Email address
@@ -43,11 +41,15 @@ function Login() {
           <input type="checkbox" value="remember-me" /> ¿Permanecer Registrado?
         </label>
       </div>
+      <Link to="/homeapp">
       <button class="btn btn-lg btn-success btn-block" type="submit">
         ¡Inicia Sesion!
       </button>
+      </Link>
       <br></br>
+      <Link to="/password">
       <u>¿Olvido su contraseña?</u>
+      </Link>
       <br></br>
       <p> Ingresar por: </p>
       <div class="btn-group d-flex">
