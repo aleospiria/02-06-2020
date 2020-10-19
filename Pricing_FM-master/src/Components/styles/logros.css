@@ -1,0 +1,10 @@
+.easy {
+    background-color: yellowgreen;
+    display: flex;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 20px;
+    justify-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

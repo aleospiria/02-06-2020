@@ -1,18 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Components/ejemplo.css";
-import logo from "../images/Logo.jpg"
+import "../Components/styles/general.css";
+import logo from "../images/Logo.jpg";
+import Arrow from "../images/Flecha.png";
 
 function Login() {
   return (
+    <div class="contenido_chiquito">
     <form class="form-signin">
+      <Link to="/">
+        <img src={Arrow} width="60px" height="40px" class="rounded float-left"></img>
+      </Link>
+      <br></br>
+      <br></br>
+      <button class="btn btn-light" title="¡Cambia tu foto de perfil!">
       <img
-        class="mb-4"
+        class="rounded mb-4"
         src={logo}
         alt=""
         width= "72px"
         height="72px"
       />
+      </button>
       <h1 class="h3 mb-3 font-weight-normal">Por favor, ingrese sus datos</h1>
       <label for="inputEmail" class="sr-only">
         Email address
@@ -36,12 +46,20 @@ function Login() {
         required=""
       />
       <br></br>
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rol Academico</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Docente</a>
+      <a class="dropdown-item" href="#">Estudiante</a>
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="Codigo Academico"></input>
+      <br></br>
       <div class="checkbox mb-3">
         <label>
-          <input type="checkbox" value="remember-me" /> ¿Permanecer Registrado?
+          <input type="checkbox" value="remember-me" onClick="" /> ¿Permanecer Registrado?
         </label>
       </div>
-      <Link to="/homeapp">
+      
+      <Link to="/Welcome">
       <button class="btn btn-lg btn-success btn-block" type="submit">
         ¡Inicia Sesion!
       </button>
@@ -57,7 +75,9 @@ function Login() {
       <button id= "Goog" class="btn btn-warning btn-block" type="submit">Google</button>
       </div>
       <p class="mt-5 mb-3 text-muted">©2020</p>
+ 
     </form>
+    </div>
   );
 }
 

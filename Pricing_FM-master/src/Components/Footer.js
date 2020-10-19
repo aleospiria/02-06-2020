@@ -1,9 +1,10 @@
 import React from "react";
 import Logo from "../images/Logo.jpg"
+import css from "../Components/styles/footer.css"
 
 function Footer() {
   return (
-    <div className="container">
+    <div className="container" id="tm">
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
@@ -14,93 +15,28 @@ function Footer() {
               width="24"
               height="24"
             />
-            <small class="d-block mb-3 text-muted">© 2017-2020</small>
+            <small class="d-block mb-3 text-muted">2020</small>
           </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
+          <div  id="footer">
+            <h5>ADLTP</h5>
             <ul class="list-unstyled text-small">
               <li>
                 <a class="text-muted" href="/">
-                  Cool stuff
+                  Acerca de ADLTP
                 </a>
-              </li>
-              <li>
+<br></br>
                 <a class="text-muted" href="/">
-                  Random feature
+                  Ayudanos a mejorar
                 </a>
-              </li>
-              <li>
+<br></br>
                 <a class="text-muted" href="/">
-                  Team feature
+                  Nuestro servicio
                 </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Stuff for developers
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Another one
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Last time
-                </a>
+              <br></br>
               </li>
             </ul>
           </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a class="text-muted" href="/">
-                  Resource
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Resource name
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Another resource
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Final resource
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a class="text-muted" href="/">
-                  Team
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Locations
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Privacy
-                </a>
-              </li>
-              <li>
-                <a class="text-muted" href="/">
-                  Terms
-                </a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </footer>
     </div>
